@@ -8,6 +8,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.viewpager2.widget.ViewPager2
 import com.example.grubgo.R.drawable.img_2
 
+
 class OnboardingActivity : AppCompatActivity() {
 
     private lateinit var viewPager: ViewPager2

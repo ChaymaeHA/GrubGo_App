@@ -1,12 +1,12 @@
-<!-- res/layout/activity_register.xml -->
+<!-- res/layout/activity_login.xml -->
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:padding="24dp"
     android:gravity="center"
-    xmlns:tools="http://schemas.android.com/tools"
-    tools:context=".RegisterActivity">
+    tools:context=".LoginActivity">
 
     <ImageView
         android:layout_width="60dp"
@@ -15,7 +15,7 @@
         android:layout_gravity="center_horizontal" />
 
     <TextView
-        android:text="Créer un compte"
+        android:text="Connectez-vous à votre compte"
         android:textSize="20sp"
         android:textStyle="bold"
         android:gravity="center"
@@ -24,56 +24,50 @@
         android:layout_height="wrap_content" />
 
     <TextView
-        android:text="Bienvenue, ami ! Entrez vos coordonnées pour commencer à commander de la nourriture"
+        android:text="Ravi de vous revoir, saisissez vos coordonnées ci-dessous pour continuer votre commande"
         android:gravity="center"
         android:layout_marginTop="8dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 
     <EditText
-        android:id="@+id/registerEmail"
+        android:id="@+id/emailEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
         android:hint="Entrez e-mail."
         android:inputType="textEmailAddress"
-        android:layout_marginTop="24dp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:minHeight="48dp"
-        android:padding="12dp" />
-
+        android:minHeight="48dp" />
 
     <EditText
-        android:id="@+id/registerPassword"
+        android:id="@+id/passwordEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
         android:hint="Entrez Mot de passe"
         android:inputType="textPassword"
-        android:layout_marginTop="12dp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:minHeight="48dp"
-        android:padding="12dp" />
+        android:minHeight="48dp" />
 
-    <EditText
-        android:id="@+id/confirmPassword"
-        android:hint="Confirmer le mot de passe"
-        android:inputType="textPassword"
-        android:layout_marginTop="12dp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:minHeight="48dp"
-        android:padding="12dp" />
-
-    <com.google.android.material.button.MaterialButton
-        android:backgroundTint="@color/white"
-        android:id="@+id/googleRegisterButton"
-        android:layout_marginTop="24dp"
-        android:textColor="@color/black"
-        android:drawableLeft="@drawable/img_3"
-        android:text="Connexion avec Google"
-        android:layout_width="match_parent"
+    <TextView
+        android:layout_marginTop="8dp"
+        android:text="J'ai oublié mon mot de passe ?"
+        android:textColor="@android:color/darker_gray"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
 
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/googleSignInButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="@color/white"
+        android:drawableLeft="@drawable/img_3"
+        android:text="Connexion avec Google"
+        android:textColor="@color/black" />
+
     <Button
-        android:id="@+id/registerButton"
-        android:text="Créer un compte"
+        android:id="@+id/loginButton"
+        android:text="Se connecter"
         android:layout_marginTop="12dp"
         android:backgroundTint="#FF6A3D"
         android:textColor="@android:color/white"
@@ -81,8 +75,8 @@
         android:layout_height="wrap_content" />
 
     <TextView
-        android:id="@+id/goToLoginText"
-        android:text="Se connecter à mon compte"
+        android:id="@+id/goToRegisterText"
+        android:text="Créer un compte"
         android:textColor="@android:color/holo_orange_dark"
         android:gravity="center"
         android:layout_marginTop="16dp"
